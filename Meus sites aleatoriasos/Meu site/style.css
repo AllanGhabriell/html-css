@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@font-face {
+    font-family:fontealla;
+    src: url(fontes/Technocra.otf);
+}
+
+:root {
+    --cor01:#303030;
+    --cor02:#546c75;
+    --cor03:#3C6B80;
+    --cor04:#11A4E5;
+    --cor05:#308BB3;
+    --fontealla:'fontealla';
+    --fontenormal:verdana, 'cursive';
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: var(--cor02);
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor04));
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+header h1 {
+    font-family: var(--fontenormal);
+}
+nav {
+    background-color: var(--cor04);
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+nav a:hover {
+    transition-duration: 0.5s;
+    color: rgb(209, 251, 255);
+    background-color: var(--cor05);
+    border-radius: 10px;
+
+}
+nav a:active {
+    color: var(--cor02);
+    background-color: rgb(7, 99, 155);
+}
+main {
+    background-color: white;
+    margin: auto ;
+    min-width: 400px;
+    max-width: 800px;
+    padding: 10px 20px;
+}
+main h1 {
+    color: var(--cor03);
+    font-family: var(--fontealla);
+    font-weight: normal;
+    text-indent: 10px;
+    font-size: 32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+main p {
+    text-indent: 10px;
+    padding-bottom: 10px;
+}
+main a {
+    font-weight: bold;
+    text-decoration: none;
+    color:var(--cor03);
+}
+main a:hover {
+    text-decoration: underline;
+}
+main img {
+    display:block;
+    margin: auto;
+    width: 100%;
+}
+aside {
+    background-color: #9bb0b8;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.271);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+aside h2 {
+    background-color: #5ab7dc;
+    margin: -10px -10px 0 -10px;
+    padding: 10px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+ul {
+    margin-top:20px;
+    margin-bottom: 10px;
+    columns: 2;
+    list-style-position: inside;
+    text-decoration: underline;
+}
+footer {
+    background-color: var(--cor01);
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
