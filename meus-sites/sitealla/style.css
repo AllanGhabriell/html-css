@@ -21,11 +21,13 @@ body {
     background-color: var(--cor02);
 }
 header {
+    margin: 0px;
     background-image: linear-gradient(to bottom, var(--cor03), var(--cor04));
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     color: white;
+    box-shadow: 15px 15px 15px black;
 }
 header h1 {
     font-family: var(--fontenormal);
@@ -36,7 +38,7 @@ nav {
     padding-bottom: 5px;
 }
 nav a {
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
     text-decoration: none;
     font-weight: bold;
     color: white;
@@ -45,17 +47,18 @@ nav a:hover {
     transition-duration: 0.5s;
     color: rgb(209, 251, 255);
     background-color: var(--cor05);
-    border-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 
 }
 nav a:active {
-    color: var(--cor02);
+    color: white;
     background-color: rgb(7, 99, 155);
 }
 main {
     background-color: white;
     margin: auto ;
-    min-width: 400px;
+    min-width: 200px;
     max-width: 800px;
     padding: 10px 20px;
 }
@@ -94,6 +97,7 @@ aside {
     margin-bottom: 15px;
 }
 aside h2 {
+    text-align: center;
     background-color: #5ab7dc;
     margin: -10px -10px 0 -10px;
     padding: 10px 10px;
@@ -105,13 +109,16 @@ ul {
     margin-bottom: 10px;
     columns: 2;
     list-style-position: inside;
+    list-style-type: square;
     text-decoration: underline;
+    color: rgb(24, 24, 24);
 }
 footer {
     background-color: var(--cor01);
     text-align: center;
     color: white;
     padding: 5px;
+    margin: 0px;
 }
 footer a {
     text-decoration: none;
