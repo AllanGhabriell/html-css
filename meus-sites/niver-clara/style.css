@@ -1,0 +1,123 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+/* Roxo Profundo (#4B0082) – Pode ser usado como cor de fundo principal ou para o cabeçalho.
+Lavanda (#E6E6FA) – Ideal para o fundo de seções secundárias ou para caixas de texto, como mensagens de aniversário.
+Roxo Pastel (#D8BFD8) – Use em botões ou ícones para criar destaques sutis.
+Ameixa (#8E4585) – Perfeita para títulos e subtítulos, adicionando contraste com o fundo mais claro.
+Branco (#FFFFFF) – Use para textos ou áreas com alto contraste, como o rodapé ou seções com muito conteúdo. */
+
+:root {
+    --font-lumanosimo:"Lumanosimo";
+    --roxo-profundo:#4B0082;
+    --lavanda:#E6E6FA;
+    --roxo-pastel:#D8BFD8;
+    --ameixa:#8E4585;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: var(--roxo-profundo);
+}
+main {
+    padding: 20px;
+    background-color: var(--lavanda);
+    min-width: 200px;
+    max-width: 700px;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    color: var(--ameixa);
+    font-size: 50px;
+}
+h2.nossa {
+    text-align: center;
+    color: var(--ameixa);
+    font-size: 25px;
+    margin-top: 25px;
+}
+#principal {
+    color: var(--ameixa);
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+}
+p {
+    margin: 5px;
+    font-family: var(--font-lumanosimo);
+    text-align: center;
+}
+strong {
+    color: var(--ameixa);
+}
+img {
+    display: block;
+    margin: 20px auto;
+    width:50%;
+    border: 3px solid rgb(255, 0, 43);
+    border-radius: 20px;
+}
+video {
+    display: block;
+    margin: 20px auto;
+    width:50%;
+    border: 3px solid rgb(255, 0, 43);
+    border-radius: 20px;
+}
+aside h2{
+    text-align: center;
+    padding: 25px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    background-color: var(--roxo-profundo);
+    color: white;
+    font-size: 30px;
+}
+aside {
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    background-color: var(--roxo-pastel);
+    margin: 40px;
+}
+aside div {
+    padding: 10px;
+}
+ul {
+    list-style: none;
+    columns: 2;  list-style-position: inside;
+}
+li a {
+    text-decoration: none;
+    color: var(--roxo-profundo);
+    font-weight: bold;
+    font-size: 20px;
+}
+li a:hover {
+    background-color: var(--lavanda);
+    border-radius: 10px;
+}
+li a:active {
+    color: black;
+}
+li::before {
+    content:"\2665";
+
+}
+a img:hover {
+    border-color: rgb(255, 165, 180);
+}
+a img:active {
+    border-color: yellow;
+}
+#flor {
+    margin-top:10px;
+    
+    text-align: center;
+}
+#flor:hover::after {
+    content: " 🌷";
+    font-size: 1em;
+}
