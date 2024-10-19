@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Teste de Formulário</h1>
+    </header>
+    <main>
+        <form action="cadastro.js" method="post">
+            <div>
+                <label for="iusu">Usuário:</label>
+                <input type="text" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Nome do usuário" autocomplete="current-password">
+            </div>
+            <div>
+                <label for="isen">Senha:</label>
+                <input type="password" id="isen" required minlength="8" size="8" placeholder="Senha">
+            </div>
+            <div>
+                <button type="submit">Envir</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

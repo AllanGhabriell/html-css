@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de Formulário</h1>
+    </header>
+    <main>
+        <form action="cadastro.js" method="post">
+            <div>
+                <label for="cor">Cor:</label>
+                <input type="color" name="cor" id="cor">
+            </div>
+            <div>
+                <label for="nivel">Cor:</label>
+                <input type="range" name="nivel" id="nivel" min="1" max="5" value="5" oninput="val.innerHTML = Number(nivel.value)">
+                <output id="val">5</output>
+            </div>
+            <div>
+                <label for="perfil">Foto:</label>
+                <input type="file">
+            </div>
+            <div>
+                <button>Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

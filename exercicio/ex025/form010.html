@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de Formulário</h1>
+    </header>
+    <main>
+        <form action="cadastro.js" method="post">
+            <div>
+                <label for="ano">Em que ano você nasceu?</label>
+                <!--oninput="document.getElementById('idade').innerHTML = 2024-Number(ano.value)">-->
+                <input type="number" id="ano" min="1900" max="2024" oninput="calcu()" value="2000">
+            </div>
+            <div>
+                <label for="idade">Sua idade é:</label>
+                <output id="idade">24</output>
+            </div>
+            <div>
+                <button>Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+    <script>
+        function calcu() {
+            let atual = Number(new Date().getFullYear())
+            let ano = document.getElementById('ano').value
+            let ouput = document.getElementById('idade')
+            ouput.innerHTML = atual - ano
+        }
+    </script>
+</body>
+</html>
