@@ -1,0 +1,110 @@
+/* 
+    Paleta de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+:root {
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    background-color:var(--cor2);
+    height: 100vh;
+    width: 100vh;
+}
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.54);
+}
+#imagem {
+    display: block;
+    background-color: var(--cor2);
+    background-image: url(../estilos/cidade.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+#form {
+    display: block;
+    padding: 10px;
+
+}
+#form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#form p {
+    font-size: 0.8em;
+}
+.campo {
+    background-color: var(--cor2);
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    padding: 2px 5px 10px 5px;
+}
+.campo > label {
+    display: none;
+}
+.campo > input {
+    padding: 4px;
+    margin: 6px auto 5px auto;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.489);
+}
+#entrar {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#entrar:hover {
+    background-color: #295b59;
+    cursor: pointer;
+}
+#esqas {
+    margin: 6px 0px;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #5fcdca;
+    border: 1px solid #58b7b4;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #295b59;
+    padding: 5px;
+}
+#esqas:hover {
+    background-color: white;
+}

@@ -1,0 +1,59 @@
+:root {
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    #login {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 80vw;
+        height: 40vh;
+    }
+    #imagem {
+        flex: 1;
+        height: 100%;
+        background-position: bottom center;
+    }
+    #form {
+        flex: 1.5;
+        padding: 20px;
+    }
+    .campo input {
+        width: 100%;
+        border-radius: 5px;
+    }
+    #entrar, #esqas {
+        width:100%;
+        margin: 5px auto;
+    }
+}
+
+@media screen and (min-width:992px) {
+    html, body {
+        background-image: linear-gradient(to top, var(--cor1), var(--cor2));
+    }
+    #login {
+        width: 950px;
+        height: 35vh;
+
+    }
+    #imagem {
+    float: right;
+    width: 50%;
+    height: 100%;
+    }
+    #form {
+        float: left;
+        width: 50%;
+    }
+    #form p {
+        font-size: 1.2em;
+    }
+    .campo input {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
